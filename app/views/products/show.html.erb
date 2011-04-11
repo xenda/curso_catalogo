@@ -1,0 +1,14 @@
+<h1>Detalle de producto</h1>
+
+<% if @product.category %>
+  Categoria: <%= @product.category.name %><br />
+<% end %>
+
+Categoria: <%= @product.try(:category).try(:name) %><br />
+Nombre: <%= @product.name %> <br />
+Detalle: <%= @product.description %><br />
+Precio: <%= number_to_currency @product.price %><br />
+Numero de paginas: <%= @product.number_of_pages %><br />
+Disponible?: <%= show_available %> 
+
+

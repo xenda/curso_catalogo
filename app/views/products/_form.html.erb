@@ -1,0 +1,10 @@
+<%= simple_form_for @product do |f| %>
+
+  <%= f.input :name %>
+  <%= f.association :category %>
+  <%= f.input :description %>
+  <%= f.input :number_of_pages %>
+  <%= f.input :price %>
+  <%= f.input :available %>
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  store_id: 1
+  generated_at: 2011-04-04 20:32:39
+  document_type: MyString
+  client_id: 1
+
+two:
+  store_id: 1
+  generated_at: 2011-04-04 20:32:39
+  document_type: MyString
+  client_id: 1

@@ -1,0 +1,17 @@
+<%= simple_form_for(@order) do |f| %>
+  <div class="field">
+    <%= f.input :store_id %>
+  </div>
+  <div class="field">
+    <%= f.input :generated_at, :as => :date %>
+  </div>
+  <div class="field">
+    <%= f.input :document_type, :collection => Order::DOCUMENT_TYPES.values %>
+  </div>
+  <div class="field">
+    <%= f.input :client_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

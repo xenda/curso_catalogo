@@ -1,0 +1,24 @@
+
+<h1>Listado de productos</h1>
+<%= form_tag "/search" do %>
+  <%= label_tag "price", "Precio mayor que" %>
+  <%= text_field_tag "price" %>
+  <%= submit_tag "Buscar" %>
+<% end %>
+Mostrando <%= @products.size %> productos
+
+<%= link_to "Agregar producto", new_product_path %>
+
+<%= page_entries_info @products %>
+<table>
+  <thead>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>Number of Pages</th>
+    <th />
+    </thead
+    <%= render @products %>
+  </table>
+
+  <%= will_paginate @products %>

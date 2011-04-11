@@ -1,0 +1,29 @@
+<h1>Listing orders</h1>
+
+<table>
+  <tr>
+    <th>Store</th>
+    <th>Generated at</th>
+    <th>Document type</th>
+    <th>Client</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @orders.each do |order| %>
+  <tr>
+    <td><%= order.store_id %></td>
+    <td><%= order.generated_at %></td>
+    <td><%= order.document_type %></td>
+    <td><%= order.client_id %></td>
+    <td><%= link_to 'Show', order %></td>
+    <td><%= link_to 'Edit', edit_order_path(order) %></td>
+    <td><%= link_to 'Destroy', order, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Order', new_order_path %>

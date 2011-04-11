@@ -1,0 +1,8 @@
+<tr>
+  <td><%= link_to product.name,product %></td>
+  <td><%= product.description %></td>
+  <td><%= product.price %></td>
+  <td><%= product.number_of_pages %></td>      
+  <td><%= link_to "Editar", edit_product_path(product) %></td>      
+  <td><%= link_to "Eliminar", product, :confirm => "Desea eliminar?", :method => :delete %></td>      
+</tr>

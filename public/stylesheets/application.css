@@ -1,0 +1,43 @@
+/* @override 
+	http://localhost:3000/stylesheets/application.css?1302227325
+	http://localhost:3000/stylesheets/application.css?1302227678
+*/
+
+body {
+	padding: 0px;
+	background-color: #ff6858;
+}
+
+nav li {
+	float:  left;
+	margin-right: 10px;
+	list-style: none;
+}
+
+nav li a {
+	padding: 10px;
+	background: #b2b2b2;
+	color: white;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+nav li a:hover {
+	background: #fcfab2;
+}
+
+nav {
+	width: 100%;
+	overflow: auto;
+	height: 80px;
+	margin-top:0px !important ;
+	top:  0px;
+	background-color: rgba(140,140,140,0.39);
+	position: fixed;	
+
+}
+
+div.wrapper {
+	margin-top: 7em;
+}
